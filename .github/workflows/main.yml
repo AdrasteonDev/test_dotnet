@@ -1,0 +1,13 @@
+name: "godot-ci test"
+on: push
+
+jobs:
+  test-dotnet:
+    name: Test Dotnet
+    runs-on: ubuntu-20.04
+    container:
+      image: adrasteondev/godot-ci:mono-4.0.3
+    steps:
+      - name: Check Version
+        run: |
+            /usr/share/dotnet --version
