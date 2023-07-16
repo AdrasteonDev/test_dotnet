@@ -4,9 +4,9 @@ on: push
 jobs:
   test-dotnet:
     name: Test Dotnet
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     container:
-      image: adrasteondev/godot-ci:mono-4.0.3
+      image: adrasteondev/godot-ci:mono-4.1
     steps:
       - name: Check Version
         run: |
