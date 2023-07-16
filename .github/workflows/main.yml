@@ -11,6 +11,3 @@ jobs:
       - name: Check Version
         run: |
             dotnet --version
-      - name: Check Version
-        run: |
-            /usr/share/dotnet --version
