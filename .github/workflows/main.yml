@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Check Version
         run: |
-            /usr/share/dotnet --version
+            dotnet --version
